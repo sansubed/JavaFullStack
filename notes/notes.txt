@@ -1,0 +1,5 @@
+JavaScript -> uses the modern way that is the json
+Java and Dotnet -> old 
+Dotnet -> dotnet : dotnet new console, executables that does various things, here it is creating a new project
+Java -> 
+Logs -> catalina.out -> you can see allt he logs here.
