@@ -3,3 +3,33 @@ Java and Dotnet -> old
 Dotnet -> dotnet : dotnet new console, executables that does various things, here it is creating a new project
 Java -> 
 Logs -> catalina.out -> you can see allt he logs here.
+
+
+Maven project
+1. Install the maven project -> brew install maven
+2. Install the apache tomcat server
+3. Run the tom cat server -> go to the logs and catalina.out has all the logs
+4. Go to browser and navigate to : /path/to/tomcat/bin
+5. Run this bash script to start the server: /startup.sh
+6. If issue running the script change the mode: chmod +x filename
+7. Default port: 80, http://localhost:8080
+
+Create a maven project
+1. mvn archetype:generate -DgroupId=com.example -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+2. DgroupId: package name, DartifactId: project name
+my-app
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── com
+    │           └── example
+    │               └── App.java
+    └── test
+        └── java
+            └── com
+                └── example
+                    └── AppTest.java
+Maven project with following structure.
+3. Navigate to the app's path and run the command to build: mvn compile
+4. Run the project: mvn exec:java -Dexec.mainClass="com.example.App"
